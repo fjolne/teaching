@@ -1,5 +1,5 @@
 {
-  "name": "@exercism/javascript-template",
+  "name": "javascript-template",
   "description": "template for javascript exercises based on exercism.org",
   "author": "fjolne",
   "private": true,
