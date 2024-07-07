@@ -1,13 +1,13 @@
 {
-  "name": "@exercism/javascript-forth",
-  "description": "Exercism exercises in Javascript.",
-  "author": "Katrina Owen",
+  "name": "@exercism/javascript-template",
+  "description": "template for javascript exercises based on exercism.org",
+  "author": "fjolne",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/exercism/javascript",
-    "directory": "exercises/practice/forth"
+    "url": "https://github.com/fjolne/teaching",
+    "directory": "javascript/template"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
