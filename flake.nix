@@ -22,7 +22,6 @@
             packages = with pkgs; [
               nodejs_20
               typescript
-              exercism
               python
             ];
             shellHook = ''
