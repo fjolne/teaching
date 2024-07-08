@@ -24,3 +24,36 @@ export function factorial(n) {
 export function filterGreater(a, x) {
   throw new Error("Remove this line and implement the function");
 }
+
+/**
+ * Given array a of numbers, return a new array which consists of elements of a squared,
+ * i.e. given x is element of a, the new array will have the element x*x.
+ *
+ * @param {number[]} a
+ * @returns {number[]} the new array
+ */
+export function mapSquare(a) {
+  throw new Error("Remove this line and implement the function");
+}
+
+/**
+ * Given array a of numbers, return the sum of all even elements.
+ * i.e. given x is element of a, it will be included in the sum if x % 2 == 0.
+ *
+ * @param {number[]} a
+ * @returns {number} the sum
+ */
+export function sumOfEven(a) {
+  throw new Error("Remove this line and implement the function");
+}
+
+/**
+ * Given array a, return a new array which has elements of a in reversed order,
+ * e.g. reversed([1, 2, 3]) == [3, 2, 1]
+ *
+ * @param {number[]} a
+ * @returns {number[]} the reversed array
+ */
+export function reversed(a) {
+  throw new Error("Remove this line and implement the function");
+}

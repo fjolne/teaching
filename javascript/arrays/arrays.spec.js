@@ -1,4 +1,10 @@
-import { factorial, filterGreater } from "./arrays";
+import {
+  factorial,
+  filterGreater,
+  mapSquare,
+  sumOfEven,
+  reversed,
+} from "./arrays";
 
 describe("arrays", () => {
   beforeEach(() => {
@@ -29,6 +35,36 @@ describe("arrays", () => {
     });
     test("remove all", () => {
       expect(filterGreater([10, 30, 20], 35)).toEqual([]);
+    });
+  });
+
+  describe("mapSquare", () => {
+    test("basic", () => {
+      expect(mapSquare([1, 2, 3])).toEqual([1, 4, 9]);
+    });
+    test("empty", () => {
+      expect(mapSquare([])).toEqual([]);
+    });
+  });
+
+  describe("sumOfEven", () => {
+    test("all even", () => {
+      expect(sumOfEven([10, 20, 30])).toEqual(10 + 20 + 30);
+    });
+    test("all odd", () => {
+      expect(sumOfEven([11, 21, 31])).toEqual(0);
+    });
+    test("mixed", () => {
+      expect(sumOfEven([11, 20, 40, 31])).toEqual(20 + 40);
+    });
+  });
+
+  describe("reversed", () => {
+    test("basic", () => {
+      expect(reversed([10, 20, 30])).toEqual([30, 20, 10]);
+    });
+    test("empty", () => {
+      expect(reversed([])).toEqual([]);
     });
   });
 });
