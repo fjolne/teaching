@@ -57,3 +57,18 @@ export function sumOfEven(a) {
 export function reversed(a) {
   throw new Error("Remove this line and implement the function");
 }
+
+/**
+ * Given a string, replace each occurance of 'he', 'him', 'his' with appropriate plural form:
+ * he => they, him => them, his => their. Assume the string consists only of lower-case characters.
+ * e.g. modernize("his was a great programmer: many thought of him as a genius. though he said he was not.")
+ *      == "they was a great programmer: many thought of them as a genius. though they said they was not."
+ *
+ * Hint: you may use s.replaceAll(...)
+ *
+ * @param {string} s
+ * @returns {string} modernized s
+ */
+export function modernize(s) {
+  throw new Error("Remove this line and implement the function");
+}

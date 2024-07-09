@@ -4,6 +4,7 @@ import {
   mapSquare,
   sumOfEven,
   reversed,
+  modernize,
 } from "./arrays";
 
 describe("arrays", () => {
@@ -65,6 +66,23 @@ describe("arrays", () => {
     });
     test("empty", () => {
       expect(reversed([])).toEqual([]);
+    });
+  });
+
+  describe("modernize", () => {
+    test("he is", () => {
+      expect(
+        modernize(
+          "he was a great programmer: many thought of him as a genius. though he said he was not."
+        )
+      ).toEqual(
+        "they was a great programmer: many thought of them as a genius. though they said they was not."
+      );
+    });
+    test("many many", () => {
+      expect(modernize("his his him he him he")).toEqual(
+        "their their them they them they"
+      );
     });
   });
 });
