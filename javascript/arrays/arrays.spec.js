@@ -5,6 +5,9 @@ import {
   sumOfEven,
   reversed,
   modernize,
+  all0,
+  max,
+  longest0,
 } from "./arrays";
 
 describe("arrays", () => {
@@ -83,6 +86,48 @@ describe("arrays", () => {
       expect(modernize("his his him he him he")).toEqual(
         "their their them they them they"
       );
+    });
+  });
+
+  describe("all0", () => {
+    test("mixed", () => {
+      expect(all0([1, 0, 0, 2, 3, 0, 0, 0])).toEqual(false);
+    });
+    test("all", () => {
+      expect(all0([0, 0, 0, 0, 0, 0, 0, 0])).toEqual(true);
+    });
+    test("none", () => {
+      expect(all0([1, 2, 3])).toEqual(false);
+    });
+  });
+
+  describe("max", () => {
+    test("first", () => {
+      expect(max([3, 2, 1])).toEqual(3);
+    });
+    test("last", () => {
+      expect(max([1, 2, 3, 4])).toEqual(4);
+    });
+    test("mid", () => {
+      expect(max([1, 2, 3, 2, 1])).toEqual(3);
+    });
+    test("multi", () => {
+      expect(max([1, 3, 3, 2, 1])).toEqual(3);
+    });
+  });
+
+  describe("longest0", () => {
+    test("last", () => {
+      expect(longest0([1, 0, 0, 2, 3, 0, 0, 0])).toEqual(3);
+    });
+    test("first", () => {
+      expect(longest0([0, 0, 0, 0, 5, 4, 0, 0])).toEqual(4);
+    });
+    test("none", () => {
+      expect(longest0([1, 2, 3])).toEqual(0);
+    });
+    test("full", () => {
+      expect(longest0([0, 0, 0, 0])).toEqual(4);
     });
   });
 });

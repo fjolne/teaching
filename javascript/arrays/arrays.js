@@ -72,3 +72,40 @@ export function reversed(a) {
 export function modernize(s) {
   throw new Error("Remove this line and implement the function");
 }
+
+/**
+ * Given an array of numbers, return true if all of the elements are zeroes.
+ * all0([1, 0, 0, 2, 3]) == false
+ * all0([0, 0, 0, 0]) == true
+ *
+ * @param {number[]} a
+ * @returns {number}
+ */
+export function all0(a) {
+  throw new Error("Remove this line and implement the function");
+}
+
+/**
+ * Given an array of positive numbers (>0), find the maximum number;
+ * max([1, 2, 3, 2, 1]) == 3
+ * max([10, 10]) == 10
+ *
+ * @param {number[]} a
+ * @returns {number}
+ */
+export function max(a) {
+  throw new Error("Remove this line and implement the function");
+}
+
+/**
+ * Given an array of numbers, find the length of the longest segment of zeroes. Ex:
+ * longest0([1, 0, 0, 2, 3, 0, 0, 0]) == 3
+ * longest0([0, 0, 0, 0, 5, 4, 0, 0]) == 4
+ * longest0([1, 2, 3]) == 0
+ *
+ * @param {number[]} a
+ * @returns {number}
+ */
+export function longest0(a) {
+  throw new Error("Remove this line and implement the function");
+}
